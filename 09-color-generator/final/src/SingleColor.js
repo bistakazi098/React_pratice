@@ -25,7 +25,7 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
       <p className='color-value'>{hexValue}</p>
       {alert && <p className='alert'>copied to clipboard</p>}
     </article>
-  )
+  );
 }
 
 export default SingleColor

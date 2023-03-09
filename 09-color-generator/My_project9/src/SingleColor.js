@@ -9,9 +9,12 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
   const hex = rgbToHex(...rgb);
 
   return (
+
     <article
+      // conditionally adding  classname 
       className={`color ${index > 10 && "color-light"}`}
       style={{ backgroundColor: `rgb(${bcg})` }}
+      // adding copy to clipboard
       onClick={() => {
         setAlert(true);
         navigator.clipboard.writeText(hex);
@@ -23,6 +26,8 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
       {alert && <p className="alert">copied to clipboard</p>}
     </article>
   );
-};
+
+}
+
 
 export default SingleColor;

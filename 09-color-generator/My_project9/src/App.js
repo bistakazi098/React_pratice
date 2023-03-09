@@ -9,7 +9,7 @@ function App() {
   // for error
   const [error, setError] = useState(false);
   // for listing colors
-  const [list, setList] = useState([]);
+  const [list, setList] = useState(new Values(('#dc8add')).all(10));
 
 
   // preventing handleSubmit
@@ -31,7 +31,7 @@ function App() {
         <h3>Class Generator</h3>
         {/* on summit calling handleSubmit */}
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="#f15025"
+          <input type="text" placeholder="#f8e8f8"
             // for Dynamically adding classname
             className={`${error ? 'error' : null}`} value={color} onChange={(e) => {
               setColor(e.target.value)
