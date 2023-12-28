@@ -15,7 +15,7 @@ Some of the small projects in my list.
 ![](https://github.com/bistakazi101/React_projects/blob/master/05-menu/fifth.png)
 
 
-##Color Generator
+## Color Generator
 
 ![](https://github.com/bistakazi101/React_projects/blob/master/09-color-generator/Screenshot%20from%202023-03-09%2016-50-11.png)
 
